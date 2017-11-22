@@ -1,5 +1,17 @@
 # student-lang
+
 The Student Programming Language
+
+```
+set_cost(<, 1)
+
+f n =
+ for e in 1 .. n
+   e < 3
+   
+prove cost(f), param(f, n) by
+  cost(for, n) * cost(<)
+```
 
 # Design Goals
 
@@ -8,3 +20,7 @@ The Student Programming Language
 - Cost semantics with proofs
 - Correctness properties with proofs
 - Command-line/Compiler driven
+
+# Implementation
+
+- OCaml is a strong choice
