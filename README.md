@@ -3,29 +3,56 @@
 The Student Programming Language
 
 ```
-sum n =
- sum = 0
+sum(n) =
+ s = 0
  for i in n
-   sum += 1
- sum
+   s += 1
    
-O(sum) = n
+O(sum(n)) = n
   by for i in n
-    by +=
+    by +
+    by =
 
-sum = map(+, n)
-  by =
+built-in {
+  reduce(f, n) =
+    acc = 0
+    for r in n
+      acc = f(acc, r)
+}
 
-cross n =
-  cross = 0
+sum = reduce(+, n)
+  by s = 0
+  by for r in n
+    by s += 1
+      by 1
+      by +
+      by =
+
+cross(n) =
+  c = 0
   for i in n
-    for j in n
-      cross += i * j
+    for j in reverse n
+      c += i * j
 
-O(cross) = n ^ 2 
+O(cross(n)) = n ^ 2
+  by c = 0
   by for i in n 
-    by for j in n
-      by * /\ by +=
+    by for j in reverse n
+      by c += i * j
+        by i * j
+        by +
+        by =
+        
+built-in {
+  zip(o, n, m) =
+    z = []
+    for zn in n
+      for zm in m
+        z += [o(zn, zm)]
+}
+
+cross(n) = reduce(+, zip(*, n, reverse n))
+  by for z in n
 ```
 
 # Design Goals
