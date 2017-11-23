@@ -21,12 +21,10 @@ built-in {
 }
 
 sum = reduce(+, n)
-  by s = 0
-  by for r in n
-    by s += 1
-      by 1
-      by +
-      by =
+  by s = 0 == acc = 0
+  by for i in n == for r in n
+    by s += 1 == acc = f(acc, r)
+      by + == f
 
 cross(n) =
   c = 0
