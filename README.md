@@ -3,20 +3,33 @@
 The Student Programming Language
 
 ```
-set_cost(<, 1)
-
-f n =
- for e in 1 .. n
-   e < 3
+sum n =
+ sum = 0
+ for i in n
+   sum += 1
+ sum
    
-prove cost(f), param(f, n) by
-  cost(for, n) * cost(<)
+O(sum) = n
+by for i in n
+by +=
+
+cross n =
+  cross = 0
+  for i in n
+    for j in n
+      cross += i * j
+
+O(cross) = n ^ 2 
+by for i in n 
+  by for j in n
+    by * /\ by +=
 ```
 
 # Design Goals
 
 - Educational Language
 - Inspired by C0, TLA+/PlusCal/TLAPS, and Isabelle/HOL
+- Integers only
 - Cost semantics with proofs
 - Correctness properties with proofs
 - Command-line/Compiler driven
