@@ -10,8 +10,11 @@ sum n =
  sum
    
 O(sum) = n
-by for i in n
-by +=
+  by for i in n
+    by +=
+
+sum = map(+, n)
+  by =
 
 cross n =
   cross = 0
@@ -20,9 +23,9 @@ cross n =
       cross += i * j
 
 O(cross) = n ^ 2 
-by for i in n 
-  by for j in n
-    by * /\ by +=
+  by for i in n 
+    by for j in n
+      by * /\ by +=
 ```
 
 # Design Goals
