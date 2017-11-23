@@ -66,4 +66,4 @@ cross(n) = reduce(+, zip(*, n, reverse n))
 
 # Implementation
 
-- OCaml is a strong choice
+- OCaml
