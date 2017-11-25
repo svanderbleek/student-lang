@@ -56,7 +56,7 @@ cross(n) = reduce(+, zip(*, n, reverse n))
 # Design Goals
 
 - Educational Language
-- Inspired by C0, TLA+/PlusCal/TLAPS, and Isabelle/HOL
+- Inspired by C0, TLA+/PlusCal/TLAPS, and Isabelle/Isar
 - Integers only
 - Cost semantics with proofs
 - Correctness properties with proofs
