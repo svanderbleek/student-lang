@@ -5,10 +5,12 @@ The Student Programming Language
 ```
 @ x <= y
 - midpoint x y in x..y
-by x + a >= if a >= 0
-by x + a >= x if a <= 0 and
-by y-x/2 >= 0
-by y+x/2 <= y if x <= y
+by midpoint x y >= x
+  by x + a >= x if a >= 0 and
+  lol not true
+by midpoint x y <= y
+  by y-x/2 >= 0
+  by y+x/2 <= y if x <= y
 - x + midpoint x y + midpoint x y = y or x + midpoint x y + 1 = y
 by y-x/2 + y-x/2 = y - x
 by x + -x = 0
