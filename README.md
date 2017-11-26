@@ -5,18 +5,22 @@ The Student Programming Language
 ```
 @ ints is []
 @ is x, y in ints and x + y = targ
+
 sum-of-two ints targ =
   store := {}
   for int in ints
     store[int]? -> [store[int], int]
     store[targ - int] := int
+
 - sum of sum-of-two ints int = int
 by for i in ints we store[targ - i] = i or -> 
 by store[targ -  x] + store[targ - y] = targ
   by store[x + y - x] = store[y] = y
   by store[x + y - y] = store[x] = y
+
 ! size ints
 by for i in ints
+
 * size ints
 by for i in ints we store[]
 ```
