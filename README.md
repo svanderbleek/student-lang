@@ -14,7 +14,11 @@ sum-of-two ints targ =
 by for i in ints we store[targ - i] = i or -> 
 by store[targ -  x] + store[targ - y] = targ
   by store[x + y - x] = store[y] = y
-  by store[x + y - y] = store[x] = y 
+  by store[x + y - y] = store[x] = y
+! size ints
+by for i in ints
+* size ints
+by for i in ints we store[]
 ```
 
 # Design Goals
@@ -22,7 +26,7 @@ by store[targ -  x] + store[targ - y] = targ
 - Educational language
 - Inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar
 - Semantics:
-  - `@` for assumptions, `-` for statement, `by` for proof, `!` for cost
+  - `@` for assumptions, `-` for statement, `by` for proof, `!` for time cost, `*` for space cost
   - implicit quantification in meta language
   - functions, integers, and integer arrays
 - Cost semantics with proofs
