@@ -5,8 +5,7 @@ The Student Programming Language
 ```
 | sum-of-two
 
-@ ints is []
-@ is x, y in ints and x + y = targ
+@ exist x, y in ints and x + y = targ
 
 sum-of-two ints targ =
   store := {}
