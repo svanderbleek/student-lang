@@ -37,3 +37,7 @@ by for i in ints we store[]
 - Cost semantics with proofs
 - Correctness properties with proofs
 - Command-line/compiler driven
+
+# Theory Notes
+
+- https://en.wikipedia.org/wiki/Transdichotomous_model
