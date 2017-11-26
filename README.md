@@ -3,6 +3,8 @@
 The Student Programming Language
 
 ```
+| sum-of-two
+
 @ ints is []
 @ is x, y in ints and x + y = targ
 
@@ -30,7 +32,7 @@ by for i in ints we store[]
 - Educational language
 - Inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar
 - Semantics:
-  - `@` for assumptions, `-` for statement, `by` for proof, `!` for time cost, `*` for space cost
+  - `|` for definition, `@` for assumptions, `-` for statement, `by` for proof, `!` for time cost, `*` for space cost
   - implicit quantification in meta language
   - functions, integers, and integer arrays
 - Cost semantics with proofs
