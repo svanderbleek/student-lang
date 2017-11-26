@@ -41,3 +41,4 @@ by for i in ints we store[]
 # Theory Notes
 
 - https://en.wikipedia.org/wiki/Transdichotomous_model
+- http://adam.chlipala.net/frap/
