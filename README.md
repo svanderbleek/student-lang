@@ -3,20 +3,18 @@
 The Student Programming Language
 
 ```
-@ x <= y
-- midpoint x y in x..y
-by midpoint x y >= x
-  by x + a >= x if a >= 0 and
-  lol not true
-by midpoint x y <= y
-  by y-x/2 >= 0
-  by y+x/2 <= y if x <= y
-- x + midpoint x y + midpoint x y = y or x + midpoint x y + 1 = y
-by y-x/2 + y-x/2 = y - x
-by x + -x = 0
-! midpoint x y = 1 if +,/ = 1 by midpoint.L1
-midpoint x y =
-  x + y-x/2
+@ ints is []
+@ is x, y in ints and x + y = targ
+- sum of sum-of-two ints int = int
+by for i in ints we store[targ - i] = i or -> 
+by store[targ -  x] + store[targ - y] = targ
+  by store[x + y - x] = store[y] = y
+  by store[x + y - y] = store[x] = y 
+sum-of-two ints targ =
+  store := {}
+  for int in ints
+    store[int]? -> [store[int], int]
+    store[targ - int] := int
 ```
 
 # Design Goals
