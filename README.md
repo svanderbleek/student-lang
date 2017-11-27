@@ -33,7 +33,7 @@ by @init
 - educational language
 - inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar, CalcCheck
 - semantics:
-  - `|` for definition, `@` for facts, `-` for statement, `by` for proof, `!` for time cost, `*` for space cost
+  - `|` for subject, `@` for facts, `-` for statement, `by` for proof, `!` for time, `*` for space
   - implicit quantification in meta language
   - functions, integers, and integer arrays
 - cost semantics with proofs
