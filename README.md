@@ -28,19 +28,20 @@ by @for
 by @init
 ```
 
-# Design Goals
+# Goals
 
-- Educational language
-- Inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar, CalcCheck
-- Semantics:
-  - `|` for definition, `@` for assumptions, `-` for statement, `by` for proof, `!` for time cost, `*` for space cost
+- educational language
+- inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar, CalcCheck
+- semantics:
+  - `|` for definition, `@` for facts, `-` for statement, `by` for proof, `!` for time cost, `*` for space cost
   - implicit quantification in meta language
   - functions, integers, and integer arrays
-- Cost semantics with proofs
-- Correctness properties with proofs
-- Command-line/compiler driven
+- cost semantics with proofs
+- correctness properties with proofs
+- command-line/compiler driven
 
-# Theory Notes
+
+# References
 
 - http://calccheck.mcmaster.ca/
 - https://en.wikipedia.org/wiki/Transdichotomous_model
