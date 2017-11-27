@@ -15,7 +15,7 @@ sum-of-two ints targ =
     @int store[int] => exists num in traversed ints with num = targ - int
     if store[int] return store[int], int
     @store store[int]
-    increment-store: store[targ - int] := int
+    store[targ - int] := int
 
 - +* sum-of-two ints int = int
 by @xy-targ and @int
