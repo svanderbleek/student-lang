@@ -13,23 +13,24 @@ sum-of-two ints targ =
   @for ints
   for int in ints
     @int store[int] => exists num in traversed ints with num = targ - int
-    store[int]? [store[int], int]
+    if store[int] return store[int], int
     @store store[int]
     increment-store: store[targ - int] := int
 
-- (+*) sum-of-two ints int = int
+- +* sum-of-two ints int = int
 by @xy-targ and @store and @int
 
 - time size = ints
 by @for
 
 - space size = ints
-by @init
+by @init and @store
 
+| sum-of-two!
 | partial function
 
 sum-of-two! ints targ =
-  handle sum-of-two ints targ
+  handle sum-of-two ints targ with 0
 ```
 
 # Goals
