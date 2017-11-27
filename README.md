@@ -4,11 +4,12 @@ The Student Programming Language
 
 ```
 | sum-of-two
+| find a pair of two ints that sum to targ
 
 @xy-targ exists x, y in ints with x + y = targ
 sum-of-two ints targ =
   @init
-  store := {}
+  store := []
   @for ints
   for int in ints
     @int store[int] => exists num in traversed ints with num = targ - int
@@ -31,7 +32,7 @@ by @init
 - educational language
 - inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar, CalcCheck
 - semantics:
-  - `|` for subject, `@` for facts, `-` for statement, `by` for proof
+  - `|` for comment, `@` for facts, `-` for statement, `by` for proof
   - implicit quantification in meta language
   - functions, integers, and integer arrays
 - cost semantics with proofs
