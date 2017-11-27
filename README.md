@@ -30,7 +30,7 @@ by @init and @store
 | partial function
 
 sum-of-two! ints targ =
-  handle sum-of-two ints targ with 0
+  handle sum-of-two ints targ return 0
 ```
 
 # Goals
