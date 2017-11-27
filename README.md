@@ -4,7 +4,7 @@ The Student Programming Language
 
 ```
 | sum-of-two
-| find a pair of two ints that sum to targ
+| find a pair of two ints that sum to target
 
 @xy-targ exists x, y in ints with x + y = targ
 sum-of-two ints targ =
