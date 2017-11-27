@@ -25,6 +25,11 @@ by @for
 
 - space size = ints
 by @init
+
+| partial function
+
+sum-of-two! ints targ =
+  handle sum-of-two ints targ
 ```
 
 # Goals
@@ -33,6 +38,7 @@ by @init
 - inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar, CalcCheck
 - semantics:
   - `|` for comment, `@` for facts, `-` for statement, `by` for proof
+  - specific to `@` language: `exists`, `=`, `with`, `=>`,`handle`
   - implicit quantification in meta language
   - functions, integers, and integer arrays
 - cost semantics with proofs
