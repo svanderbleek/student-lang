@@ -18,7 +18,7 @@ sum-of-two ints targ =
     increment-store: store[targ - int] := int
 
 - +* sum-of-two ints int = int
-by @xy-targ and @store and @int
+by @xy-targ and @int
 
 - time size = ints
 by @for
