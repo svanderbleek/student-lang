@@ -29,7 +29,7 @@ by for i in ints we store[]
 # Design Goals
 
 - Educational language
-- Inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar
+- Inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar, CalcCheck
 - Semantics:
   - `|` for definition, `@` for assumptions, `-` for statement, `by` for proof, `!` for time cost, `*` for space cost
   - implicit quantification in meta language
@@ -40,5 +40,7 @@ by for i in ints we store[]
 
 # Theory Notes
 
+- http://calccheck.mcmaster.ca/
 - https://en.wikipedia.org/wiki/Transdichotomous_model
 - http://adam.chlipala.net/frap/
+
