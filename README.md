@@ -5,25 +5,27 @@ The Student Programming Language
 ```
 | sum-of-two
 
-@ exist x, y in ints with x + y = targ
-
+@xy-targ exists x, y in ints with x + y = targ
 sum-of-two ints targ =
+  @init
   store := {}
+  @for ints
   for int in ints
-    store[int]? -> [store[int], int]
-    store[targ - int] := int
+    @int store[int] => exists num in traversed ints with num = targ - int
+    store[int]? [store[int], int]
+    @store store[int]
+    increment-store: store[targ - int] := int
 
-- sum of sum-of-two ints int = int
-by for i in ints we store[targ - i] = i or -> 
-by store[targ -  x] + store[targ - y] = targ
-  by store[x + y - x] = store[y] = y
-  by store[x + y - y] = store[x] = y
+
+
+- (+*) sum-of-two ints int = int
+by @xy-targ and @store and @int
 
 ! size ints
-by for i in ints
+by @for
 
 * size ints
-by for i in ints we store[]
+by @init
 ```
 
 # Design Goals
