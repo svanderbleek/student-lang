@@ -19,10 +19,10 @@ sum-of-two ints targ =
 - (+*) sum-of-two ints int = int
 by @xy-targ and @store and @int
 
-! size ints
+- time size = ints
 by @for
 
-* size ints
+- space size = ints
 by @init
 ```
 
@@ -31,7 +31,7 @@ by @init
 - educational language
 - inspired by C0, TLA+/PlusCal/TLAPS, Isabelle/Isar, CalcCheck
 - semantics:
-  - `|` for subject, `@` for facts, `-` for statement, `by` for proof, `!` for time, `*` for space
+  - `|` for subject, `@` for facts, `-` for statement, `by` for proof
   - implicit quantification in meta language
   - functions, integers, and integer arrays
 - cost semantics with proofs
